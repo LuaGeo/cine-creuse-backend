@@ -6,10 +6,7 @@ from dotenv import load_dotenv
 import os
 from flask_cors import CORS
 
-
-
 load_dotenv()
-
 
 app = Flask(__name__)
 app.config["MONGO_URI"] = os.getenv("MONGO_URI")
